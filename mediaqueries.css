@@ -1,0 +1,404 @@
+/* Full Screen */
+@media screen and (max-width: 1400px)  {
+    #weather-container {
+        width: 80%;
+        height: auto;
+    }
+
+    #weather-container2 {
+        width: 100%;
+        margin: 30px;
+    }
+
+    #pic-container {
+        width: 40%;
+    }
+
+    #weather-image {
+        max-width: 100%;
+    }
+
+    nav {
+        height: 12vh;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+   
+
+  
+    }     
+
+/* Tablet */
+
+@media screen and (max-width: 1030px) {
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        
+    
+    }
+    
+    
+    
+    .hamburger-icon {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+    }
+    
+    .hamburger-icon span {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #hamburger-nav {
+        position: fixed;
+       
+        width: 100%;
+       
+        z-index: 1000;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+      #ham-spam
+     {
+        background-color: rgb(255, 255, 255) ;
+     }
+     
+     
+     .hamburger-icon.open span:first-child
+     {
+     transform: rotate(45deg) translate(10px, 5px);
+     }
+     .hamburger-icon.open span:nth-child(2)
+     {
+         opacity: 0;
+     }
+     .hamburger-icon.open span:last-child
+     {
+     transform: rotate(-45deg) translate(10px, -5px);
+     }
+     
+     .hamburger-icon span:first-child
+     {
+         transform: none;
+         
+     }
+     .hamburger-icon span:first-child
+     {
+         opacity: 1;
+     
+     }
+     .hamburger-icon span:first-child
+     {
+         transform: none;
+     
+     } 
+    .hamburger-menu{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hamburger-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    
+    }
+    .hamburger-icon span {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-links
+    {
+        position: absolute;
+        top: 100%;
+        right: 0 ;
+        background-color: white;
+        width: fit-content;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3 ease-in-out;
+    
+    }
+    
+    
+    .menu-links a{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        color:black;
+        text-decoration: none;
+        transition: all 0.3 ease-in-out;
+    }
+    
+    .menu-links li{
+        list-style: none;
+    
+    }
+    .menu-links.open
+    {
+        max-height: 300px;
+    
+    }
+  
+
+    .logo-seven-days
+    {
+        display: none;
+    }
+
+    #weather-container {
+       display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 75%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #weather-container2 {
+        width: 70%;
+        margin-right: 25px;
+        height:auto ;
+    }
+    #forecast-container
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #pic-container {
+        width: 25%;
+        margin-bottom: 10px;
+    }
+
+    #weather-image {
+        max-width: 100%;
+    }
+
+    nav {
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 1.25rem;
+        padding: 10px 0;
+    }
+}
+
+/* Mobile  */
+@media screen and (max-width: 600px) {
+
+    
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        
+    
+    }
+
+    .hamburger-icon {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+    }
+    
+    .hamburger-icon span {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #hamburger-nav {
+        position: fixed;
+       
+        width: 100%;
+       
+        z-index: 1000;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+      #ham-spam
+     {
+        background-color: rgb(255, 255, 255) ;
+     }
+     
+     
+     .hamburger-icon.open span:first-child
+     {
+     transform: rotate(45deg) translate(10px, 5px);
+     }
+     .hamburger-icon.open span:nth-child(2)
+     {
+         opacity: 0;
+     }
+     .hamburger-icon.open span:last-child
+     {
+     transform: rotate(-45deg) translate(10px, -5px);
+     }
+     
+     .hamburger-icon span:first-child
+     {
+         transform: none;
+         
+     }
+     .hamburger-icon span:first-child
+     {
+         opacity: 1;
+     
+     }
+     .hamburger-icon span:first-child
+     {
+         transform: none;
+     
+     } 
+    .hamburger-menu{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hamburger-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    
+    }
+    .hamburger-icon span {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-links
+    {
+        position: absolute;
+        top: 100%;
+        right: 0 ;
+        background-color: white;
+        width: fit-content;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3 ease-in-out;
+    
+    }
+    
+    
+    .menu-links a{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        color:black;
+        text-decoration: none;
+        transition: all 0.3 ease-in-out;
+    }
+    
+    .menu-links li{
+        list-style: none;
+    
+    }
+    .menu-links.open
+    {
+        max-height: 300px;
+    
+    }
+    #weather-container {
+        justify-content: center;
+        flex-direction: column;
+        width: 75%;
+        height: auto;
+    }
+
+    #weather-container2 {
+        width: 70%;
+        margin-right: 25px;
+        height:auto ;
+    }
+    #forecast-container
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #pic-container {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .logo-seven-days
+    {
+        display: none;
+    }
+    #weather-image {
+        max-width: 70%;
+    }
+
+    #city-name {
+        width: 100%;
+    }
+
+    #input-container {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    #fetch-btn {
+        margin-top: 10px;
+    }
+
+    #seven-day-btn 
+    {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+
+    #seven-menu 
+    {
+        justify-items: right;
+    }
+}

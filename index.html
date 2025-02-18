@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Weather Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Weather Forecast</div>
+        <ul class="nav-links">
+            <li><a href="index.html"  class="fs-3 poppins-regular">Home</a></li>
+            <li><a href="favourite.html" class="fs-3 poppins-regular">Favourite Cities</a></li>
+            <li><a href="7-day.html" class="fs-3 poppins-regular">7 Day Forecast</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Weather Forecast</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span id="ham-spam"></span>
+                <span id="ham-spam"></span>
+                <span id="ham-spam"></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" class="fs-5 poppins-regular">Home</a></li>
+                <li><a href="favourite.html" class="fs-5 poppins-regular">Favourite</a></li>
+                <li><a href="7-day.html" class="fs-5 poppins-regular">7 Day Forecast</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="weather-container">
+         <div id="pic-container">
+            <img src="./resources/App-icon-background.png" id="weather-image" alt="Weather Image">
+         </div>
+          <div id="weather-container2">
+              <div id="input-container">
+                <input class="form-control" type="text" id="city-name" placeholder="Enter a city">
+                <button id="fetch-btn" class="btn btn-secondary btn-sm" onclick="getTheWeather()">Search</button>
+              </div> 
+            <div id="info-con">
+                <div id="temperature-div" class="fs-2 poppins-regular"></div>
+                <div id="weather-information" class="fs-3 poppins-semibold"></div>
+                <button id="favorite-btn" class="btn btn-warning btn-sm" style="display:none;" onclick="toggleFavorite()">⭐ Favorite</button>
+                <button id="seven-day-btn" class="btn btn-primary btn-sm" style="display:none;" onclick="goTo7Day()">📅 7-Day Forecast</button>
+            </div>
+         </div>
+    </div>  
+
+    <script src="script.js"></script>
+</body>
+</html>
